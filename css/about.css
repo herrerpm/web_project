@@ -1,0 +1,106 @@
+.about-section {
+    text-align: center;
+    width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto 150px auto;
+    padding: 10px 0;
+}
+
+.about-section-title {
+    font-size: var(--section-title-size);
+    margin-bottom: 50px;
+}
+
+/* typography section */
+.typo-card {
+    text-align: left;
+    background-color: var(--white);
+    padding: 30px 20px;
+    border: 1px solid black;
+    margin: 10px 15px;
+    box-shadow: 0 5px 10px 5px var(--shadow);
+}
+
+.typo-card .typo-info .typo-name {
+    font-family: var(--subheading-size);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.typo-card .typo-info .typo-description {
+    max-width: 300px;
+    text-align: justify;
+}
+
+.typo-card .typo-glyphy {
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.sizes {
+    max-width: 500px;
+    margin: auto;
+}
+
+.sizes .size {
+    color: var(--strong-shadow);
+    font-family: var(--heading-font);
+}
+
+.sizes h2 {
+    margin-top: 50px;
+}
+
+/* color pallette */
+.pallette-color {
+    --size: 150px;
+    outline: 1px solid black;
+    max-width: var(--size);
+    min-width: var(--size);
+    height: var(--size);
+    justify-content: center;
+    box-shadow: 0 5px 10px 5px var(--shadow);
+    margin: 0 10px;
+}
+
+.pallette-color p {
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Resources */
+.resource {
+    margin: 50px;
+}
+
+.resource-img {
+    height: 100px;
+}
+
+.resource-name {
+    margin-top: 20px;
+}
+
+/* OUR TEAM */
+.team-img img {
+    max-width: 300px;
+    width: 90vw;
+}
+
+.team-member p {
+    font-weight: 600;
+    margin: 10px 20px;
+}
+
+.typo-card,
+.pallette-color,
+.resource {
+    transition: all 0.5s ease;
+}
+
+.typo-card:hover,
+.pallette-color:hover,
+.resource:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
