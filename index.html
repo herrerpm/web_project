@@ -27,12 +27,14 @@
 
         <!-- GLOBAL CSS -->
         <link rel="stylesheet" href="css/root.css" />
+
+        <link rel="stylesheet" href="css/index.css" />
     </head>
     <body>
         <header>
             <div class="navbar">
                 <div class="container-fluid">
-                    <a href="/" class="navbar-brand">
+                    <a href="#home" class="navbar-brand">
                         <h1>Art Gallery</h1>
                     </a>
                     <button onclick="toggleMenu()">
@@ -99,7 +101,235 @@
                 </div>
             </div>
         </header>
-
+        <section class="banner" id="home">
+            <h2 class="banner-heading">World's best art auction site</h2>
+            <a
+                href="https://unsplash.com/@adrigeo_"
+                target="_blank"
+                class="banner-credits"
+                >By Adriana Geo</a
+            >
+        </section>
+        <section class="landing-section">
+            <h2 class="landing-section-title">What's Trending</h2>
+            <div class="images-container-section">
+                <div class="images">
+                    <div class="image-container">
+                        <img
+                            src="./assets/paintings/abstract1.jpg"
+                            alt="Abstract"
+                            loading="lazy"
+                        />
+                        <span class="overlay">Abstract</span>
+                    </div>
+                    <div class="image-container">
+                        <img
+                            src="./assets/paintings/abstract2.jpg"
+                            alt="Abstract"
+                            loading="lazy"
+                        />
+                        <span class="overlay">Blue</span>
+                    </div>
+                    <div class="image-container">
+                        <img
+                            src="./assets/paintings/angels.jpg"
+                            alt="angels"
+                            loading="lazy"
+                        />
+                        <span class="overlay">Mystic</span>
+                    </div>
+                    <div class="image-container">
+                        <img
+                            src="./assets/paintings/birds.jpg"
+                            alt="birds"
+                            loading="lazy"
+                        />
+                        <span class="overlay">Birds</span>
+                    </div>
+                    <div class="image-container">
+                        <img
+                            src="./assets/paintings/landscape1.jpg"
+                            alt="landscape"
+                            loading="lazy"
+                        />
+                        <span class="overlay">landscape</span>
+                    </div>
+                </div>
+            </div>
+            <a class="landing-see-more" href="/pages/trending.html">
+                <i class="see-more-icon material-icons">arrow_forward</i>
+                <span class="see-more-text">See More</span>
+            </a>
+        </section>
+        <hr />
+        <section class="landing-section">
+            <h2 class="landing-section-title">Our Galleries</h2>
+            <div class="container gallery-section">
+                <div class="row">
+                    <div class="image-container col">
+                        <img
+                            src="./assets/paintings/flowers.jpg"
+                            alt="flowers"
+                            loading="lazy"
+                        />
+                        <span class="overlay">Flowers</span>
+                    </div>
+                    <div class="image-container col">
+                        <img
+                            src="./assets/paintings/angels2.jpg"
+                            alt="angels"
+                            loading="lazy"
+                        />
+                        <span class="overlay">Renaissance</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="image-container col-5">
+                        <img
+                            src="./assets/paintings/landscape1.jpg"
+                            alt="landscape"
+                            loading="lazy"
+                        />
+                        <span class="overlay">landscape</span>
+                    </div>
+                    <div class="image-container col">
+                        <img
+                            src="./assets/paintings/white-bruises.jpg"
+                            alt="white paint"
+                            loading="lazy"
+                        />
+                        <span class="overlay">Minimalism</span>
+                    </div>
+                    <div class="image-container col">
+                        <img
+                            src="./assets/paintings/birds.jpg"
+                            alt="birds"
+                            loading="lazy"
+                        />
+                        <span class="overlay">Birds</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="image-container col">
+                        <img
+                            src="./assets/paintings/japanesse.jpg"
+                            alt="japanese art"
+                            loading="lazy"
+                        />
+                        <span class="overlay">Japanese Art</span>
+                    </div>
+                </div>
+            </div>
+            <a class="landing-see-more" href="/pages/galleries.html">
+                <i class="see-more-icon material-icons">arrow_forward</i>
+                <span class="see-more-text">See More</span>
+            </a>
+        </section>
+        <section class="parallax-section landing-section">
+            <h2 class="landing-section-title">Meet The artists</h2>
+            <div class="artists-content">
+                <p>
+                    If you're liking the paintings shown on this website, please
+                    feel free to go to the <em>Artists Page</em> for more
+                    information about them
+                </p>
+                <a class="read-more" href="/pages/galleries.html"> Go There </a>
+            </div>
+        </section>
+        <section class="landing-section">
+            <h2 class="landing-section-title">About Us</h2>
+            <div class="about-content">
+                We are three computer science students, located in México,
+                creating a mock of an art auction web page for a school project
+                for the assignment of Web Development. This webpage is took
+                inspiration with
+                <a
+                    href="https://www.artsy.net/"
+                    style="text-decoration: underline"
+                    target="_blank"
+                >
+                    Artsy</a
+                >, a real auction site. To get more details of how this website
+                was built, feel free to click on <b>see more</b>
+            </div>
+            <a class="landing-see-more" href="/pages/about.html">
+                <i class="see-more-icon material-icons">arrow_forward</i>
+                <span class="see-more-text">See More</span>
+            </a>
+        </section>
+        <footer>
+            <h1 class="footer-title">Art Gallery</h1>
+            <div class="container">
+                <div class="row">
+                    <p class="col">Resources</p>
+                    <p class="col">Pages</p>
+                    <p class="col">Contact</p>
+                </div>
+                <div class="row">
+                    <a href="https://unsplash.com/" target="_blank" class="col"
+                        >Unsplash</a
+                    >
+                    <a href="/pages/about.html" class="col">About</a>
+                    <a
+                        href="https://github.com/herrerpm/web_project"
+                        class="col"
+                        target="_blank"
+                        >Git Hub</a
+                    >
+                </div>
+                <div class="row">
+                    <a
+                        href="https://getbootstrap.com/"
+                        target="_blank"
+                        class="col"
+                        >Bootsrap</a
+                    >
+                    <a href="/pages/artists.html" class="col">Artists</a>
+                    <a href="mailto:" class="col">Mail</a>
+                </div>
+                <div class="row">
+                    <a href="https://undraw.co/" target="_blank" class="col"
+                        >Undraw</a
+                    >
+                    <a href="/pages/contact.html" class="col">Contact</a>
+                    <span class="col"></span>
+                </div>
+                <div class="row">
+                    <a
+                        href="https://developers.google.com/fonts/docs/material_icons"
+                        class="col"
+                        >Material Icons</a
+                    >
+                    <a href="/pages/credits.html" class="col">Credits</a>
+                    <span class="col"></span>
+                </div>
+                <div class="row">
+                    <a
+                        href="https://www.flaticon.es/"
+                        target="_blank"
+                        class="col"
+                        >Flat Icon</a
+                    >
+                    <a href="/pages/galleries.html" class="col">Galleries</a>
+                    <span class="col"></span>
+                </div>
+                <div class="row">
+                    <span class="col"></span>
+                    <a href="/pages/login.html" class="col">Login</a>
+                    <span class="col"></span>
+                </div>
+                <div class="row">
+                    <span class="col"></span>
+                    <a href="/pages/signup.html" class="col">Signup</a>
+                    <span class="col"></span>
+                </div>
+                <div class="row">
+                    <span class="col"></span>
+                    <a href="/pages/trending.html" class="col">Trending</a>
+                    <span class="col"></span>
+                </div>
+            </div>
+        </footer>
         <script src="./js/nav-menu.js"></script>
     </body>
 </html>
