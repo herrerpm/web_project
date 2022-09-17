@@ -1,0 +1,35 @@
+.page-title {
+    padding: 100px 0 50px;
+}
+.accordion-container {
+    width: 100vw;
+    max-width: 800px;
+    margin: auto;
+}
+
+.accordion {
+    box-shadow: 0 10px 50px 10px var(--strong-shadow);
+}
+
+.accordion-header button {
+    background-color: var(--white);
+}
+
+.accordion-header button:focus,
+.accordion-header button:active,
+.accordion-header button:not(.collapsed) {
+    background-color: var(--shadow);
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: var(--black);
+}
+
+.accordion-button:focus-within::after,
+.accordion-header button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon);
+}
+
+footer {
+    margin-top: 200px;
+}
