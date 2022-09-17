@@ -1,3 +1,6 @@
+.navbar {
+    position: fixed;
+}
 .banner {
     margin: auto;
     padding: 0;

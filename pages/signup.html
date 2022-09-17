@@ -29,6 +29,7 @@
 
         <!-- GLOBAL CSS -->
         <link rel="stylesheet" href="../css/root.css" />
+        <link rel="stylesheet" href="../css/login.css" />
     </head>
     <body>
         <header>
@@ -101,6 +102,75 @@
                 </div>
             </div>
         </header>
+        <main class="login-section row">
+            <div
+                class="login-sidebar col"
+                style="background-image: url('../assets/paintings/angels2.jpg')"
+            ></div>
+            <div class="form-container col">
+                <h1>Sign-Up</h1>
+                <form action="" class="login-form container" autocomplete="off">
+                    <div class="row">
+                        <div class="col form-input">
+                            <label for="email">
+                                <i class="material-icons">mail</i> Email
+                            </label>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="johndoe@mail.com"
+                                minlength=""
+                                required="true"
+                            />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col form-input">
+                            <label for="password">
+                                <i class="material-icons">lock</i> Password
+                            </label>
+                            <input
+                                type="password"
+                                name="password"
+                                placeholder="password"
+                                required="true"
+                            />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col form-input">
+                            <label for="password">
+                                <i class="material-icons">lock</i> Confirm
+                                Password
+                            </label>
+                            <input
+                                type="password"
+                                name="password"
+                                placeholder="password"
+                                required="true"
+                            />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <span class="col"></span>
+                        <div class="col form-in">
+                            <input type="submit" value="Sign Up" />
+                        </div>
+                        <span class="col"></span>
+                    </div>
+                    <div class="row">
+                        <div class="col form-text">Have an account?</div>
+                    </div>
+                    <div class="row">
+                        <span class="col"></span>
+                        <div class="col">
+                            <a href="./login.html" class="form-link">Log-In</a>
+                        </div>
+                        <span class="col"></span>
+                    </div>
+                </form>
+            </div>
+        </main>
 
         <script src="../js/nav-menu.js"></script>
     </body>
