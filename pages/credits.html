@@ -6,6 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Credits</title>
 
+        <!-- GOOGLE ICONS -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+
         <!-- BOOTSTRAP -->
         <!-- CSS only -->
         <link
@@ -23,5 +29,78 @@
         <!-- GLOBAL CSS -->
         <link rel="stylesheet" href="../css/root.css" />
     </head>
-    <body></body>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="container-fluid">
+                    <a href="/" class="navbar-brand">
+                        <h1>Art Gallery</h1>
+                    </a>
+                    <button onclick="toggleMenu()">
+                        <i class="material-icons">menu</i>
+                    </button>
+                    <nav class="nav-menu">
+                        <ul>
+                            <li class="nav-menu-item">
+                                <a href="/pages/galleries.html"
+                                    >Galleries <span></span
+                                ></a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="/pages/about.html"
+                                    >About <span></span
+                                ></a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="/pages/contact.html"
+                                    >Contact <span></span
+                                ></a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="/pages/login.html"
+                                    >login<span></span
+                                ></a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="/pages/signup.html" id="signup-button"
+                                    >Signup</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="mobile-nav">
+                        <ul class="mobile-nav-menu">
+                            <li class="mobile-nav-menu-item">
+                                <a href="/pages/galleries.html"
+                                    >Galleries <span></span
+                                ></a>
+                            </li>
+                            <li class="mobile-nav-menu-item">
+                                <a href="/pages/about.html"
+                                    >About <span></span
+                                ></a>
+                            </li>
+                            <li class="mobile-nav-menu-item">
+                                <a href="/pages/contact.html"
+                                    >Contact <span></span
+                                ></a>
+                            </li>
+                            <li class="mobile-nav-menu-item">
+                                <a href="/pages/login.html"
+                                    >login<span></span
+                                ></a>
+                            </li>
+                            <li class="mobile-nav-menu-item">
+                                <a href="/pages/signup.html" id="signup-button"
+                                    >Signup</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <script src="../js/nav-menu.js"></script>
+    </body>
 </html>

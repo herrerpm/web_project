@@ -25,12 +25,15 @@
 }
 
 * {
+    margin: 0;
+    padding: 0;
     font-family: var(--text-font);
     box-sizing: border-box;
 }
 
 body {
     background-color: var(--white);
+    overflow-x: hidden;
 }
 
 h1,
@@ -53,6 +56,158 @@ a {
 
 a:hover {
     color: var(--blue);
+}
+
+hr {
+    border-width: 3px;
+    border-color: var(--blue);
+}
+
+ul {
+    list-style: none;
+}
+
+.material-icons {
+    vertical-align: middle;
+}
+
+/* shared elements */
+
+/* navbar */
+.navbar {
+    border-bottom: 3px solid var(--black);
+    position: relative;
+}
+
+.navbar button {
+    border: none;
+    background: none;
+    position: absolute;
+    right: 15px;
+    display: none;
+    z-index: 100;
+}
+
+.navbar button i {
+    font-size: 32px;
+}
+.nav-menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    height: 0;
+    margin-top: 15px;
+}
+.nav-menu ul {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0 10px;
+}
+
+.nav-menu a {
+    height: 50px;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.nav-menu .nav-menu-item a span {
+    display: inline;
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease;
+    background-color: var(--black);
+}
+
+.nav-menu .nav-menu-item a:hover {
+    color: var(--black);
+    font-weight: 600;
+}
+
+.nav-menu .nav-menu-item a:hover span {
+    width: 100%;
+    left: 0;
+}
+
+.nav-menu .nav-menu-item #signup-button {
+    border: 3px solid var(--black);
+    transition: all 0.3s ease;
+}
+
+.nav-menu .nav-menu-item #signup-button:hover {
+    border: 3px solid var(--black);
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.mobile-nav {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: width 0.3s ease;
+    overflow: hidden;
+    transition: left 0.3s ease;
+}
+
+.mobile-nav .mobile-nav-menu {
+    width: 100vw;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-nav .mobile-nav-menu a {
+    display: block;
+    width: 100%;
+    padding: 40px;
+    font-weight: 600;
+    font-size: 20pt;
+}
+
+.mobile-nav .mobile-nav-menu a:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.show-menu {
+    left: 0;
+}
+.page-title {
+    font-size: var(--heading-size);
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .mobile-nav {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+    }
+
+    .navbar button {
+        display: block;
+    }
 }
 
 /* BOOSTRAP */
