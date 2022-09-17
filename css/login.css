@@ -2,7 +2,7 @@
     --space: 85px;
     width: 100vw;
     position: absolute;
-    height: calc(100vh - var(--space));
+    height: 100vh;
     justify-content: space-between;
 }
 
@@ -14,7 +14,6 @@
     background-size: cover;
     align-items: center;
     height: 100%;
-    background-color: red;
 }
 
 .login-sidebar h1 {
