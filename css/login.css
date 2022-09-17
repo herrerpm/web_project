@@ -1,0 +1,128 @@
+.login-section {
+    --space: 85px;
+    width: 100vw;
+    position: absolute;
+    height: calc(100vh - var(--space));
+    justify-content: space-between;
+}
+
+.login-sidebar {
+    max-width: 600px;
+    width: 100vw;
+    background-image: url('../assets/miscellaneous/banner/flowers.jpg');
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    height: 100%;
+    background-color: red;
+}
+
+.login-sidebar h1 {
+    font-size: 70pt;
+    color: white;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: auto;
+}
+
+.form-container h1 {
+    font-size: var(--heading-size);
+}
+
+.login-form {
+    padding: 10px;
+    width: 100vw;
+    max-width: 500px;
+    position: relative;
+}
+
+.login-form .form-input {
+    width: 100%;
+    margin: 30px 0;
+    position: relative;
+    min-width: 300px;
+}
+
+.login-form .form-input label {
+    font-size: var(--text-font);
+    font-weight: 600;
+    width: 100%;
+}
+
+.login-form .form-input label i {
+    font-size: 10pt;
+    vertical-align: baseline;
+}
+
+.login-form .form-input input {
+    display: inline-block;
+    font-size: var(--text-font);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid var(--black);
+    padding: 5px 3px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.login-form .form-input input:focus,
+.form-input input:hover {
+    background-color: var(--soft-shadow);
+}
+
+.login-form .form-input input:focus,
+.login-form .form-input input:valid {
+    border-bottom: 3px solid var(--blue);
+}
+
+.login-form input[type='submit'] {
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    transition: background 0.2s ease;
+    margin: 10px auto;
+}
+
+.login-form input[type='submit']:hover {
+    background-color: var(--blue);
+}
+
+.login-form .form-text {
+    text-align: center;
+    font-size: var(--text-font);
+}
+
+.login-form .form-link {
+    display: block;
+    text-align: center;
+    color: var(--blue);
+}
+
+.login-form .form-link:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 550px) {
+    .login-sidebar {
+        display: none;
+    }
+    .login-form {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-height: 550px) {
+    .login-sidebar {
+        display: none;
+    }
+}
