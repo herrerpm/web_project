@@ -1,0 +1,236 @@
+.banner {
+    margin: auto;
+    padding: 0;
+    height: 70vh;
+    max-width: 2000px;
+
+    /* parallax */
+    background-image: url('../assets/miscellaneous/banner/flowers.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+}
+
+.banner .banner-heading {
+    font-size: 48pt;
+    width: 500px;
+    margin-left: 50px;
+    text-shadow: 0 5px 5px black;
+    color: var(--white);
+}
+.banner .banner-credits {
+    position: absolute;
+    bottom: 10px;
+    color: var(--white);
+    right: 10px;
+    font-size: 8pt;
+}
+
+.landing-section {
+    height: fit-content;
+    width: 100vw;
+    max-width: 2000px;
+    margin: auto;
+}
+
+.landing-section-title {
+    margin: 30px 5%;
+}
+
+.landing-see-more {
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    text-align: end;
+    margin: 30px 5%;
+}
+
+.landing-see-more .see-more-icon {
+    background-color: var(--blue);
+    position: absolute;
+    display: inline;
+    width: 25px;
+    border-radius: 20px;
+    z-index: -1;
+    transition: width 0.3s ease;
+    color: var(--white);
+}
+
+.landing-see-more .see-more-text {
+    z-index: 100;
+    display: inline-block;
+    width: 120px;
+    text-align: end;
+    transition: all 0.3s ease;
+    padding: 0 20px;
+}
+.landing-see-more:hover .see-more-icon {
+    width: 100%;
+}
+.landing-see-more:hover .see-more-text {
+    color: var(--white);
+}
+
+/* trending */
+.images-container-section {
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 95%;
+    height: fit-content;
+    margin: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+}
+.images-container-section .images {
+    width: fit-content;
+    display: flex;
+    min-width: 100%;
+    justify-content: space-between;
+}
+.image-container {
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    overflow: hidden;
+    float: left;
+    transition: transform 0.3s ease;
+    position: relative;
+    margin: 10px;
+}
+
+.image-container img {
+    display: block;
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-container .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.gallery-section {
+    width: 95%;
+}
+
+.parallax-section {
+    height: 400px;
+    color: var(--white);
+    background-image: url('../assets/paintings/angels2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-center;
+}
+
+.parallax-section .landing-section-title {
+    margin: auto;
+    text-shadow: 0 5px black;
+}
+.parallax-section .artists-content {
+    color: var(--black);
+    background-color: var(--white);
+    width: 95%;
+    max-width: 600px;
+    padding: 30px;
+    margin: auto;
+    position: relative;
+}
+
+.parallax-section .artists-content .read-more {
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+    width: 100px;
+    margin: auto;
+    border: 3px solid var(--blue);
+    color: var(--blue);
+    margin-top: 0px;
+    transition: all 0.3s ease;
+}
+
+.parallax-section .artists-content .read-more:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.about-content {
+    width: 90%;
+    margin: auto;
+}
+
+footer {
+    height: 500px;
+    background-color: var(--blue);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+.footer-title {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    padding: 50px 0;
+}
+footer .container {
+    margin: 150px auto;
+    width: 100%;
+    float: left;
+}
+
+footer .col {
+    padding: 5px 10px;
+    width: 200px;
+    text-align: center;
+}
+footer a:hover {
+    color: var(--white);
+}
+
+footer .row:first-child {
+    font-weight: 600;
+    border-bottom: 1px solid var(--white);
+}
+/* scroll bar */
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--shadow);
+    border-radius: 50px;
+}

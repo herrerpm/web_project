@@ -34,6 +34,7 @@
 body {
     background-color: var(--white);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -51,11 +52,13 @@ p {
 
 a {
     text-decoration: none;
+    transition: color 0.3s ease;
     color: var(--black);
 }
 
 a:hover {
     color: var(--blue);
+    cursor: pointer;
 }
 
 hr {
@@ -76,7 +79,13 @@ ul {
 /* navbar */
 .navbar {
     border-bottom: 3px solid var(--black);
-    position: relative;
+    background-color: var(--white);
+    width: 100vw;
+    max-width: 2010px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1000;
 }
 
 .navbar button {
@@ -92,10 +101,9 @@ ul {
     font-size: 32px;
 }
 .nav-menu {
-    width: 600px;
+    width: fit-content;
     display: flex;
     align-items: center;
-    background-color: red;
     height: 0;
     margin-top: 15px;
 }
@@ -127,7 +135,7 @@ ul {
     bottom: 0;
     left: 50%;
     transition: width 0.3s ease, left 0.3s ease;
-    background-color: var(--black);
+    background-color: var(--blue);
 }
 
 .nav-menu .nav-menu-item a:hover {
@@ -141,13 +149,13 @@ ul {
 }
 
 .nav-menu .nav-menu-item #signup-button {
-    border: 3px solid var(--black);
+    border: 3px solid var(--blue);
     transition: all 0.3s ease;
 }
 
 .nav-menu .nav-menu-item #signup-button:hover {
-    border: 3px solid var(--black);
-    background-color: var(--black);
+    border: 3px solid var(--blue);
+    background-color: var(--blue);
     color: var(--white);
 }
 
@@ -158,9 +166,10 @@ ul {
     top: 0;
     left: 100%;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
     transition: width 0.3s ease;
-    overflow: hidden;
+    overflow-x: hidden;
     transition: left 0.3s ease;
 }
 
@@ -197,7 +206,7 @@ ul {
     text-align: center;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .mobile-nav {
         display: block;
     }
