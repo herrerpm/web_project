@@ -1,157 +1,179 @@
-/* Playfair Display */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap');
-/* Open Sans */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
-
-body{
-  font-family: var();
-}
-.S1{
-  background: linear-gradient(to right, var(--white) 0%, var(--white) 50%, black 50%, black 100%);
-  height: 600px;
-  margin-bottom: 200px;
+main {
+    max-width: 2000px;
+    width: 100vw;
+    margin: auto;
 }
 
-.row{
-    margin:auto 0;
+.separator {
+    padding: 100px 0;
     width: 100%;
-    float: left;
-    position: relative;
-    left: 12px;
-    height: 500px;
-    z-index:5;   
+    text-align: center;
+}
+
+.separator h1 {
+    font-size: var(--heading-size);
+}
+
+.section-box {
     display: flex;
-    justify-content: space-around;
-    vertical-align: baseline;
-
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 300px;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.colu{
-  position: relative;
-  top: 15%;
-  height: 300px;
-  width: 420px;
-  font-size: 100%;
-  text-align: left;
-  background-color: var(--black);
-  color: var(--white);
-  box-shadow: 0 1px 1px 1px var(--strong-shadow);
-  text-align: center;
-  padding: 10px;
-  margin-bottom: 80px;
-  
-}
-.colu2{
-  position: relative;
-  top: 15%;
-  height: 300px;
-  width: 420px;
-  font-size: 100%;
-  text-align: left;
-  background-color: var(--white);
-  box-shadow: 0 1px 1px 1px var(--strong-shadow);
-  text-align: center;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-h3{
-  font-weight: bolder;
-}
-.colu img{
-  margin-bottom: 10px;
+.box-icon {
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 40pt;
+    margin: 20px auto;
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 50%;
+    display: block;
+    position: relative;
 }
 
-.botoncito{
-  background-color: var(--white);
-  color: var(--black);
-  padding: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
-  font-weight: 600;
-  position: relative;
-  top: 20px;
+.black-box {
+    background-image: url('../assets/paintings/abstract2-medium.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-.botoncito2{
-  background-color: var(--black);
-  color: var(--white);
-  padding: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
-  font-weight: 600;
-  position: relative;
-  top: 20px;
+.black-box-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    color: var(--white);
 }
 
-.botoncito:hover {
-  background-color: var(--blue);
-  color: var(--white);
+.box-section-content {
+    display: inline-block;
+    margin: auto;
+    width: 90%;
+    height: 90%;
 }
 
-.botoncito2:hover {
-  background-color: var(--blue);
-  color: var(--black);
-}
-.S2{
-  height: 650px;
-}
-form{
-  background-color: var(--black);
-  width: 60%;
-  padding: 5%;
-  padding-top: 2%;
-  min-width: 350px;
-  margin: auto;  
-  margin-top: 100px;
-  font-family:'Playfair Display', serif;
-}
-h2{
-  text-align: center;
-  font-weight: 600;
-  font-family:var(--heading-font);
-  font-size:var(--section-title-size);
-  margin-bottom: 70px;
-  color: var(--white);
+.box-section-content h3 {
+    text-align: center;
+    font-size: var(--subheading-size);
+    font-weight: 600;
+    margin: 30px;
 }
 
-.espacio{
-  background-color:var(--white);
-  padding: 40px;
-}
-.form-control{
-  border-radius: 0;
-  background-color: var(--white);
-  border: none;
-  font-size: var(--text-font);
-  border-bottom: 3px solid var(--black);
-  padding: 5px 3px;
-  transition: all 0.3s ease;
-  width: 100%;
+.box-section-content p {
+    width: 80%;
+    text-align: justify;
+    font-size: 14pt;
+    margin: auto;
 }
 
-.form-control:focus{
-  border-radius: 0;
-  background-color: var(--white);
-  box-shadow: 0 3px 16px 5px var(--blue);
-  border: none;
-  font-size: var(--text-font);
-  border-bottom: 3px solid var(--black);
-  padding: 5px 3px;
-  transition: all 0.3s ease;
-  width: 100%;
+.landing-see-more {
+    position: relative;
+    display: block;
+    width: 140px;
+    text-align: end;
+    margin: 30px auto;
 }
 
-.botoncito3{
-  background-color: var(--blue);
-  border:none;
-  color:var(--white);
-  padding: 10px;
-  border-radius: 6px;
-  font-family: var(--text-font);
+.landing-see-more .see-more-icon {
+    background-color: var(--blue);
+    position: absolute;
+    display: inline;
+    width: 25px;
+    border-radius: 20px;
+    z-index: -1;
+    transition: width 0.3s ease;
+    color: var(--white);
 }
 
+.landing-see-more .see-more-text {
+    z-index: 100;
+    display: inline-block;
+    width: 120px;
+    text-align: end;
+    transition: all 0.3s ease;
+    padding: 0 20px;
+}
+.landing-see-more:hover .see-more-icon {
+    width: 100%;
+}
+.landing-see-more:hover .see-more-text {
+    color: var(--white);
+}
 
-textarea{
-  width: 100%;
-  height: 200px;
+.black-box .landing-see-more {
+    color: var(--white);
+}
+
+#forms {
+    margin: 100px auto;
+    background-image: url('../assets/paintings/village.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#forms form {
+    padding: 50px;
+    background-color: var(--white);
+    width: 100%;
+    max-width: 800px;
+    min-width: 300px;
+    min-height: 500px;
+    backdrop-filter: blur(5px);
+}
+
+#forms form h2 {
+    font-size: var(--subheading-size);
+    margin-bottom: 30px;
+}
+
+#forms form label {
+    width: 100%;
+    font-weight: 600;
+}
+
+#forms form input {
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 3px solid var(--black);
+    transition: all 0.3s ease;
+}
+
+#forms form input:focus,
+#forms form input:valid {
+    box-shadow: none;
+    border-color: var(--blue);
+    background: var(--soft-shadow);
+}
+
+#forms form textarea {
+    width: 100%;
+    height: 100px;
+    border: none;
+    background: transparent;
+    resize: none;
+    border-bottom: 3px solid var(--black);
+}
+
+#forms form textarea:focus,
+#forms form textarea:valid {
+    outline: none;
+    border-color: var(--blue);
+    background-color: var(--soft-shadow);
+}
+
+#forms form .landing-see-more {
+    margin: 50px 0 0;
 }
