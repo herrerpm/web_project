@@ -1,0 +1,50 @@
+main {
+    padding-top: 150px;
+    width: 100vw;
+    max-width: 2000px;
+    margin: auto;
+    text-align: center;
+}
+.credit-section {
+    margin: 100px auto;
+    width: 90%;
+}
+
+main h1 {
+    font-size: var(--section-title-size);
+}
+.credit-section a {
+    position: fit-content;
+    width: 200px;
+    height: fit-content;
+    box-shadow: 0 10px 10px var(--shadow);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.credit-section a figure .img-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.credit-section a figure img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.credit-section a figure figcaption {
+    margin: 20px auto;
+    text-align: center;
+    font-weight: 600;
+}
+
+.credit-section a:hover {
+    transform: scale(1.03);
+}
+.credit-section a:hover figure img {
+    transform: scale(1.1);
+}
