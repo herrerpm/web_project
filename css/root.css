@@ -215,10 +215,16 @@ footer {
 }
 .footer-title {
     position: absolute;
-    top: 0;
-    left: 50px;
-    padding: 50px 0;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
 }
+
+.footer-title a {
+    font-family: var(--heading-font);
+    font-size: var(--subheading-size);
+}
+
 footer .container {
     margin: 150px auto;
     width: 100%;
