@@ -1,8 +1,12 @@
 .login-section {
     --space: 85px;
     width: 100vw;
+    max-width: 2000px;
+    margin: auto;
     position: absolute;
     height: 100vh;
+    left: 50%;
+    transform: translate(-50%);
     justify-content: space-between;
 }
 
