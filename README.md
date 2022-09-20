@@ -35,13 +35,13 @@
 - Add files via upload
 
 # Footer on galleries
-    We fixed some errors on the galleries footer, so it would be displayed correctly.
+  We fixed some errors on the galleries footer, so it would be displayed correctly.
 # Added credits
-    Added the corresponding credits for the images used in the page.
+  Added the corresponding credits for the images used in the page.
 # Removed Trending
-    We had a Trending page however, in the end we realized we had enough pages so we scratched it off
+  We had a Trending page however, in the end we realized we had enough pages so we scratched it off
 # Removed extra trending references
-    We also scratched the references to the links that lead to trending
+  We also scratched the references to the links that lead to trending
 # Contact Page(aceitedelimon)
   This page at first didn't have a concrete design, we weren't sure what should it contain, 
   if a support assistant button or a FAQ page, at the we made both, which also sends you to
